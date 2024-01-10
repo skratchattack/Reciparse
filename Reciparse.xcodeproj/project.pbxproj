@@ -11,6 +11,11 @@
 		6C85FA032B446C7900F65170 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA022B446C7900F65170 /* ContentView.swift */; };
 		6C85FA052B446C7B00F65170 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C85FA042B446C7B00F65170 /* Assets.xcassets */; };
 		6C85FA082B446C7B00F65170 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C85FA072B446C7B00F65170 /* Preview Assets.xcassets */; };
+		6C85FA0F2B446CD300F65170 /* IngredientParser.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA0E2B446CD300F65170 /* IngredientParser.mlmodel */; };
+		6C85FA112B44706100F65170 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA102B44706100F65170 /* AppViewModel.swift */; };
+		6C85FA132B44739500F65170 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA122B44739500F65170 /* DataScannerView.swift */; };
+		6C85FA192B46D10D00F65170 /* ParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA182B46D10D00F65170 /* ParsingTest.swift */; };
+		6C85FA1F2B470BCB00F65170 /* Reciparser.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		6C85FA022B446C7900F65170 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6C85FA042B446C7B00F65170 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C85FA072B446C7B00F65170 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6C85FA0E2B446CD300F65170 /* IngredientParser.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = IngredientParser.mlmodel; sourceTree = "<group>"; };
+		6C85FA102B44706100F65170 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		6C85FA122B44739500F65170 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
+		6C85FA182B46D10D00F65170 /* ParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingTest.swift; sourceTree = "<group>"; };
+		6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Reciparser.mlmodel; sourceTree = "<group>"; };
+		6CE5F8692B4F18720022FCB2 /* Parser.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Parser.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +62,16 @@
 		6C85F9FF2B446C7900F65170 /* Reciparse */ = {
 			isa = PBXGroup;
 			children = (
+				6C85FA0E2B446CD300F65170 /* IngredientParser.mlmodel */,
+				6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */,
 				6C85FA002B446C7900F65170 /* ReciparseApp.swift */,
 				6C85FA022B446C7900F65170 /* ContentView.swift */,
+				6CE5F8692B4F18720022FCB2 /* Parser.playground */,
+				6C85FA122B44739500F65170 /* DataScannerView.swift */,
+				6C85FA182B46D10D00F65170 /* ParsingTest.swift */,
 				6C85FA042B446C7B00F65170 /* Assets.xcassets */,
 				6C85FA062B446C7B00F65170 /* Preview Content */,
+				6C85FA102B44706100F65170 /* AppViewModel.swift */,
 			);
 			path = Reciparse;
 			sourceTree = "<group>";
@@ -137,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C85FA0F2B446CD300F65170 /* IngredientParser.mlmodel in Sources */,
+				6C85FA132B44739500F65170 /* DataScannerView.swift in Sources */,
 				6C85FA032B446C7900F65170 /* ContentView.swift in Sources */,
+				6C85FA112B44706100F65170 /* AppViewModel.swift in Sources */,
+				6C85FA1F2B470BCB00F65170 /* Reciparser.mlmodel in Sources */,
+				6C85FA192B46D10D00F65170 /* ParsingTest.swift in Sources */,
 				6C85FA012B446C7900F65170 /* ReciparseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +297,7 @@
 				DEVELOPMENT_TEAM = CHDRV59J5N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan recipes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +327,7 @@
 				DEVELOPMENT_TEAM = CHDRV59J5N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "The app needs camera access to scan recipes.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
