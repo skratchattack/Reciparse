@@ -15,7 +15,7 @@
 		6C85FA112B44706100F65170 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA102B44706100F65170 /* AppViewModel.swift */; };
 		6C85FA132B44739500F65170 /* DataScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA122B44739500F65170 /* DataScannerView.swift */; };
 		6C85FA192B46D10D00F65170 /* ParsingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA182B46D10D00F65170 /* ParsingTest.swift */; };
-		6C85FA1F2B470BCB00F65170 /* Reciparser.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */; };
+		F32249122B4F2E32008A82B1 /* Reciparser.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = F32249112B4F2E32008A82B1 /* Reciparser.mlpackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +28,8 @@
 		6C85FA102B44706100F65170 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
 		6C85FA122B44739500F65170 /* DataScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataScannerView.swift; sourceTree = "<group>"; };
 		6C85FA182B46D10D00F65170 /* ParsingTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingTest.swift; sourceTree = "<group>"; };
-		6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Reciparser.mlmodel; sourceTree = "<group>"; };
 		6CE5F8692B4F18720022FCB2 /* Parser.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Parser.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F32249112B4F2E32008A82B1 /* Reciparser.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = Reciparser.mlpackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				6C85FA0E2B446CD300F65170 /* IngredientParser.mlmodel */,
-				6C85FA1E2B470BCB00F65170 /* Reciparser.mlmodel */,
+				F32249112B4F2E32008A82B1 /* Reciparser.mlpackage */,
 				6C85FA002B446C7900F65170 /* ReciparseApp.swift */,
 				6C85FA022B446C7900F65170 /* ContentView.swift */,
 				6CE5F8692B4F18720022FCB2 /* Parser.playground */,
@@ -158,9 +158,9 @@
 				6C85FA132B44739500F65170 /* DataScannerView.swift in Sources */,
 				6C85FA032B446C7900F65170 /* ContentView.swift in Sources */,
 				6C85FA112B44706100F65170 /* AppViewModel.swift in Sources */,
-				6C85FA1F2B470BCB00F65170 /* Reciparser.mlmodel in Sources */,
 				6C85FA192B46D10D00F65170 /* ParsingTest.swift in Sources */,
 				6C85FA012B446C7900F65170 /* ReciparseApp.swift in Sources */,
+				F32249122B4F2E32008A82B1 /* Reciparser.mlpackage in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

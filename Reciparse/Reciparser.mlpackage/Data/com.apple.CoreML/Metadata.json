@@ -1,0 +1,11 @@
+{
+  "MLModelVersionStringKey" : "--",
+  "MLModelDescriptionKey" : "Parses ingredient text",
+  "MLModelCreatorDefinedKey" : {
+    "com.apple.coreml.model.preview.type" : "wordTagger",
+    "com.apple.createml.app.version" : "5.0",
+    "com.apple.createml.app.tag" : "121.3"
+  },
+  "MLModelAuthorKey" : "Orri Arnórsson",
+  "MLModelLicenseKey" : "--"
+}

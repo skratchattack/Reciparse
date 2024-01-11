@@ -10,6 +10,16 @@ import SwiftUI
 
 struct ParsingTest: View {
     private var exampleRecipeOneString = "40 g all purpose flour\n115 g almond flour\n135 g icing sugar\n7 g egg white powder\n70 g granulated sugar (US)\n190 g egg whites\n100 g dark chocolate 70% finely crushed"
+    private var slippurinn = [
+    "500 ml milk",
+    "500 ml warm water",
+    "3 tablespoons active dried yeast",
+    "500 g sugar",
+    "500 g plain all-purpose flour",
+    "1.5 kg rye flour",
+    "3 tablespoons sea salt"
+    ]
+    
     
     private var exampleRecipe2 = [
     "40 g all purpose flour",
@@ -32,7 +42,7 @@ struct ParsingTest: View {
             List(parsedIngredients, id: \.self) { ingredient in
                 HStack(alignment: .top) {
                         Text("\(ingredient.value)\(ingredient.measure) \(ingredient.combination)").fontWeight(.bold)
-                        .frame(width: 50, alignment: .trailing)
+                        .frame(width: 80, alignment: .leading)
                     VStack(alignment: .leading) {
                             Text("\(ingredient.ingredient)".capitalized)
                             Text("\(ingredient.comment)")
@@ -58,7 +68,7 @@ struct ParsingTest: View {
     }
     
     func parseIngredients() {
-            for ingredientString in exampleRecipe2 {
+            for ingredientString in slippurinn {
                 let parsedIngredient = parseIngredientLine(ingredientString: ingredientString)
                 parsedIngredients.append(parsedIngredient)
             }
